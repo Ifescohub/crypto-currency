@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ION ICON script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+    <!-- JavaAcript  -->
+    <script src="./scrips/script.js" defer></script>
+    <script src="./scrips/nav.js" defer></script>
+</head>
+<body>
+    <a class="skip-to-content bg-white text-blue-1" href="#main">Skip to content</a>
+    <header id="hero">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo Image">
+            </div>
+
+            <div class="hero-links">
+                <ul class="menu">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+    
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <span class="divider"></span>
+                    <li class="nav-btn text-white bg-blue-3"><a href="#">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-bar">
+                <div class="bar bg-white"></div>
+                <div class="bar bg-white"></div>
+                <div class="bar bg-white"></div>
+            </div>
+        </nav>
+        
+        <article>
+            <p class="header-discount bg-neutral-1 text-grey"><span class="bg-grey text-blue-1 fw-bold">75% save</span> For the Black Friday weekend</p>
+            <h1 class="fs-5">Fastest & secure platform to invest in crypto</h1>
+            <p>Buy and sell cryptocurrencies, trusted by 10m wallets with over $30 billion in transactions</p>
+            <button class="header-btn">Try for FREE <span>></span></button>
+        </article>
+
+        <picture class="hero-img">
+            <img src="images/hero-img.png" alt="Bitcoin Image">
+        </picture>
+
+        <div class="hero-ribbon">
+            <img src="images/hero-ribbon-1.png" alt="">
+            <img src="images/hero-ribbon-2.png" alt="">
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section-1 bg-blue-1" id="about">
+            <div class="stats slide-up">
+                <div>
+                    <ion-icon name="bar-chart"></ion-icon>
+                    <div>
+                        <h2 id="currency"></h2>
+                        <p>Digital Currency Exchange</p>
+                    </div>
+                </div>
+                <div>
+                    <ion-icon name="person"></ion-icon>
+                    <div>
+                        <h2 id="wallets">$10M+</h2>
+                        <p>Trusted Wallet Investors</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <ion-icon name="earth"></ion-icon>
+                    <div>
+                        <h2 id="countries">195</h2>
+                    <p>Countries Supported</p>
+                    </div>
+                </div>
+            </div>
+
+            <picture>
+                <img src="images/why-img.png" alt="">
+            </picture>
+
+            <article>
+                <h2>why you should choose <span>CRAPPO</span></h2>
+                <p>Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.</p>
+                <button>Learn More</button>
+            </article>
+
+            <div class="exchange slide-up">
+                <div>
+                    <h2>Check how much you can earn</h2>
+                    <p>Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+
+                <div class="bg-white">
+                    <form action="" class="text-blue-1">
+                        <fieldset>
+                            <input type="text" placeholder="Enter your hash rate">
+                            
+                            <select>
+                                <option value="">TH/s</option>
+                                <option value="">H/s</option>
+                                <option value="">KH/s</option>
+                                <option value="">MH/s</option>
+                                <option value="">GH/s</option>
+                            </select>
+
+                            <button>Calculate</button>
+                        </fieldset>
+                    </form>
+
+                    <div>
+                        <h3 class="text-blue-3 uppercase fw-light">Estimated 24 hours revenue:</h3>
+                        <h3 class="text-blue-1 fs-2">0.055 130 59 ETH <span class="text-blue-3">($1275)</span> </h3>
+                        <p class="text-blue-1">Revenue will change based on mining difficulty and Ethereum price.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2" id="products">
+            <h2 class="text-blue-1">Trade Securely And Market The High Growth Cryptocurrencies.</h2>
+            <div class="cards">
+                <div class="card bg-white focus">
+                    <img src="images/bitcon.png" alt="Bitcoin image">
+                    <h2 class="text-blue-1 focus">Bitcoin <span class="text-grey fs-2 fw-light">BTC</span></h2>
+                    <p class="text-blue-1 focus">Digital currency in which a record of transactions is maintained.</p>
+                    <div class="focus card-arrow text-blue-3 fs-3">></div>
+                    <button class="focus card-btn">Start mining <span>></span></button>
+                </div>
+
+                <div class="card bg-white">
+                    <img src="images/ethereum.png" alt="Ethereum image">
+                    <h2 class="text-blue-1">Ethereum <span class="text-grey fs-2 fw-light">ETH</span></h2>
+                    <p class="text-blue-1">Blockchain technology to create and run decentralized digital applications.</p>
+                    <div class="card-arrow text-blue-3 fs-3">></div>
+                    <button class="card-btn">Start mining <span>></span> </button>
+                </div>
+
+                <div class="card bg-white">
+                    <img src="images/litecoin.png" alt="Litecoin image">
+                    <h2 class="text-blue-1">Litecoin <span class="text-grey fs-2 fw-light">LTC</span></h2>
+                    <p class="text-blue-1">Cryptocurrency that enables instant payments to anyone in the world.</p>
+                    <div class="card-arrow text-blue-3 fs-3">></div>
+                    <button class="card-btn">Start mining <span>></span> </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-3 bg-purple" id="features">
+            <h2>Market Sentiments, Portfolio, And Run The Infrastructure Of Your Choice</h2>
+
+            <article class="ft-1-article">
+                <h3>Invest Smart</h3>
+                <p>Get full statistic information about the behaviour of buyers and sellers will help uyou to make the decision</p>
+                <button>Learn More</button>
+            </article>
+            
+            <picture class="ft-1-image">
+                <img src="images/feature-1-img.png" alt="">
+            </picture>
+
+            <picture class="ft-2-image">
+                <img src="images/feature-2-img.png" alt="">
+            </picture>
+            
+            <article class="ft-2-article">
+                <h3>Detailed Statistics</h3>
+                <p>View all minin related information in realtime, at any point at any location amd decide whic polls you want to mine in.</p>
+                <button>Learn More</button>
+            </article>
+            
+
+            <article class="ft-3-article">
+                <h3>Grow your profit and track your investments</h3>
+                <p>Use advanced analytical tools. Clear Tradingview charts let you track current and historical profit investments.</p>
+                <button>Learn More</button>
+            </article>
+            <picture class="ft-3-image">
+                <img src="images/feature-3-img.png" alt="">
+            </picture>
+        </section>
+
+        <section class="section-4" id="contact">
+           <article class="newsletter">
+            <div>
+                <h2>Start Mining Now</h2>
+                <p>Join now with CRAPPO to get the latest news and start mining now</p>
+            </div>
+
+            <form>
+                <fieldset>
+                    <input class="text-white" type="text" placeholder="Enter your email">
+                    <button class="text-blue-1 bg-white">Subscribe</button>
+                </fieldset>
+            </form>
+           </article>
+        </section>
+    </main>
+
+    <footer class="bg-blue-1">
+        <picture>
+            <img src="images/logo.svg" alt="Crappo Logo Image">
+        </picture>
+
+        <div class="links">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu text-grey">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="resources">
+                <h3>Resources</h3>
+                <ul class="resources-links text-grey">
+                    <li><a href="#">Download Whitepaper</a></li>
+                    <li><a href="#">Smart Token</a></li>
+                    <li><a href="#">Blockchain Explore</a></li>
+                    <li><a href="#">Crypto API</a></li>
+                    <li><a href="#">Interest</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="fs-2">We accept the following payment systems</h2>
+            <picture>
+                <img src="images/visa.png" alt="Visa Card Logo">
+                <img src="images/mastercard.png" alt="Mastercard Logo">
+                <img src="images/bitcoin.png" alt="Bitcoin Logo">
+            </picture>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 CRAPPO. All rights reserved.</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/udeh.ifeanyi.58" target="_blank">
+                <ion-icon class="text-white" name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="https://www.instagram.com/ifeanyiifesco" target="_blank">
+                <ion-icon class="text-white" name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="" target="_blank">
+                <ion-icon class="text-white" name="logo-youtube"></ion-icon>
+            </a>
+
+            <a href="https://twitter.com/UdehIfeanyi10" target="_blank">
+                <ion-icon class="text-white" name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="https://www.linkedin.com/in/udeh-ifeanyi-monday-361645189" target="_blank">
+                <ion-icon class="text-white" name="logo-linkedin"></ion-icon> 
+            </a>  
+        </div>
+    </footer>
+</body>
+</html>
