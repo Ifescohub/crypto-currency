@@ -777,7 +777,7 @@ footer > *:nth-child(5) ion-icon{
         flex-direction: column;
         place-content: center;
         align-items: center;
-        font-size: var(--fs-3);
+        font-size: var(--fs-2);
         background: var(--clr-neutral-1);
         z-index: 1;
         transform:  translateX(100%);
