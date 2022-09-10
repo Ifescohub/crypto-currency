@@ -273,29 +273,34 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    animation: slideRight 1.5s;
 }
 
 #hero .header-discount{
     padding: 0.4rem 0.7rem 0.3rem 0.2rem;
     border-radius: 1rem;
+    animation: fade-in 1s ease-in-out;
 }
 
-#hero .header-discount span{
+#hero .header-discount span:first-of-type{
     border-radius: 16px;
     padding: 5px 8px;
     margin-inline-end: 1rem;
-    text-transform: uppercase;
 }
 
 #hero article h1{
     line-height: 1.2;
     margin-block: 1rem 0.6rem;
+    animation: fade-in-bottom 1s ease-in-out;
 }
 
 #hero article p:not(.header-discount){
     padding-inline-end: clamp(2rem, 11vw, 15rem);
     margin-block-end: 1rem;
+    animation: fade-in-bottom 1s ease-in-out;
+}
+
+#hero article button{
+    animation: scale 1s ease-in-out;
 }
 
 
@@ -304,7 +309,7 @@ body{
     grid-column: 3;
     grid-row: 2/3;
     align-self: center;
-    animation: rotate 1s;
+    animation: scale 1s ease-in-out;
 }
 
 #hero .hero-img img{
@@ -338,21 +343,7 @@ body{
     display: flex;
     justify-content: space-between;
     line-height: 1.3;
-    /* animation: slideUp 1s; */
 }
-
-/* .slide-up{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.slide-up.active{
-    transform: translateY(0);
-    opacity: 1;
-    transition: all 1s ease;
-} */
 
 .section-1 > .stats > *{
     flex-basis: 100%;
@@ -390,7 +381,6 @@ body{
     background-repeat: no-repeat;
     background-position: top right, bottom right;
     background-size: 20%;
-    animation: slideLeft 1s;
 }
 
 .section-1 > article h2{
@@ -697,52 +687,105 @@ footer > *:nth-child(5) ion-icon{
     transition: all 0.5s ease-in-out;
 }
 
-
-
-@keyframes slideRight {
-    0%{
-        transform: translateX(-25rem);
-    }
-    100%{
-        transform: translateX(0);
-    }
+footer > *:nth-child(5) ion-icon:hover{
+    color: var(--clr-blue-3);
+    transition: all 0.5s ease-in-out;
 }
 
-@keyframes slideLight {
-    0%{
-        transform: translateX(25rem);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
 
-@keyframes slideDown {
-    0%{
-        transform: translateY(-25rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
 
-@keyframes slideUp {
-    0%{
-        transform: translateY(25rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
+/**Styling scrollable elements*/
 
-@keyframes rotate {
-    0%{
-        transform: rotate(360deg);
+.scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .scroll.active {
+    opacity: 1;
+  }
+  
+  .active.fade-in {
+    animation: fade-in 1s ease-in-out both;
+  }
+  
+  .active.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
+  .active.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+  }
+  
+  .active.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+  }
+
+  .active.scale {
+    animation: scale 1s ease-in-out both;
+  }
+  
+  
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+      opacity: 0;
     }
-    100%{
-        transform: translateY(0deg);
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
     }
-}
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 
 /* --------MOBILE SIZE QUERY-------------- */

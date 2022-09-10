@@ -1,8 +1,8 @@
-# Cryto Currency website
+# Crypto Currency Website Challenge
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 
-# Frontend Mentor - Space tourism website solution
+# Crypto Currency Website Challenge solution
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
