@@ -149,6 +149,7 @@ h3{
 
 p{
     color: var(--clr-grey);
+    font-size: var(--fs-1);
 }
 
 
@@ -208,6 +209,13 @@ body{
 
 .uppercase{text-transform: uppercase;}
 
+.line1{line-height: 1;}
+
+.flex{
+    display: flex;
+
+
+}
 
 /* ------------HEADER----------  */
 #hero{
@@ -276,15 +284,17 @@ body{
 }
 
 #hero .header-discount{
-    padding: 0.4rem 0.7rem 0.3rem 0.2rem;
+    padding: 0.4rem 1rem 0.4rem 0.4rem;
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
     animation: fade-in 1s ease-in-out;
 }
 
 #hero .header-discount span:first-of-type{
     border-radius: 16px;
     padding: 5px 8px;
-    margin-inline-end: 1rem;
 }
 
 #hero article h1{
@@ -335,7 +345,7 @@ body{
 }
 
 .section-1{
-    padding-block: 6rem;
+    padding-block: 4rem 6rem;
 }
 
 .section-1 > .stats{
@@ -348,6 +358,7 @@ body{
 .section-1 > .stats > *{
     flex-basis: 100%;
     display: flex;
+    align-items: center;
 }
 
 .section-1 > .stats > *:nth-of-type(2){
@@ -360,18 +371,14 @@ body{
 
 .section-1 > .stats ion-icon{
     font-size: 1.5rem;
-    float: left;
-    color: var(--clr-blue-3);
-    background-color: var(--clr-neutral-1);
     border-radius: 50%;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-inline-end: 1.5rem;
     transition: all 0.5s ease-in-out;
 }
 
 .section-1 > picture{
     grid-column: 2;
-    animation: slideRight 1s;
 }
 
 .section-1 > article{
@@ -401,7 +408,7 @@ body{
     grid-column: 2/4;
     justify-self: center;
     position: relative;
-    margin-bottom: -5rem;
+    margin-block-end: -5rem;
     top: 8rem;
 }
 
@@ -435,6 +442,12 @@ body{
 .section-1 > .exchange select{
     border-bottom: 1px solid rgba(23, 23, 24, 0.226);
     width: 30%;
+}
+
+.section-1 > .exchange .estimate{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
 }
 
 /* SECTION-2  */
@@ -475,7 +488,7 @@ body{
     border-radius: 50%;
     height: 4rem;
     aspect-ratio: 1;
-    padding: 0.7rem 0;
+    padding: 0.3rem 0;
     margin: auto;
 }
 
@@ -667,7 +680,12 @@ footer > *:nth-child(3) picture{
     justify-content: center;
     gap: 1rem;
     margin-block-start: 1.5rem;
-    flex-wrap: wrap;
+    max-width: 100%;
+
+}
+
+footer > *:nth-child(3) picture img{
+    max-width: 33%;
 }
 
 footer > *:nth-child(4){
@@ -907,7 +925,7 @@ footer > *:nth-child(5) ion-icon:hover{
     [class*="section-"]{
         grid-template-columns: minmax(1rem, 1fr) minmax(0, 35rem) minmax(1rem, 1fr);
         grid-row: 1fr;
-        row-gap: 3rem;
+        row-gap: 2rem;
     }
 
     .section-1 > .stats{
@@ -915,12 +933,17 @@ footer > *:nth-child(5) ion-icon:hover{
         gap: 2rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .section-1 > .stats > *{
         display: flex;
-        width: fit-content;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .section-1 > .stats > *:nth-of-type(3){
+        justify-content: center;
     }
 
     .section-1 > picture{

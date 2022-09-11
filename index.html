@@ -18,7 +18,7 @@
     <script src="./scrips/nav.js" defer></script>
 </head>
 <body>
-    <a class="skip-to-content bg-white text-blue-1" href="#main">Skip to content</a>
+    <!-- <a class="skip-to-content bg-white text-blue-1" href="#main">Skip to content</a> -->
     <header id="hero">
         <nav>
             <div class="logo">
@@ -48,7 +48,11 @@
         </nav>
         
         <article class="">
-            <p class="header-discount bg-neutral-1 text-grey"><span class="bg-grey text-blue-1 fw-bold uppercase">75% save</span> <span>For the Black Friday weekend</span></p>
+            <p class="header-discount bg-neutral-1 text-grey">
+                <span class="bg-grey text-blue-1 fw-bold uppercase">75% save</span>
+                <span>For the Black Friday weekend</span>
+            </p>
+            
             <h1 class="fs-5">Fastest & secure platform to invest in crypto</h1>
             <p>Buy and sell cryptocurrencies, trusted by 10m wallets with over $30 billion in transactions</p>
             <button class="header-btn">Try for FREE <span>></span></button>
@@ -68,25 +72,25 @@
         <section class="section-1 bg-blue-1" id="about">
             <div class="stats">
                 <div class="scroll fade-in-bottom">
-                    <ion-icon name="bar-chart"></ion-icon>
+                    <ion-icon class="text-blue-3 bg-neutral-1" name="bar-chart"></ion-icon>
                     <div>
                         <h2 id="currency"></h2>
                         <p>Digital Currency Exchange</p>
                     </div>
                 </div>
                 <div class="scroll fade-in-bottom">
-                    <ion-icon name="person"></ion-icon>
+                    
+                    <ion-icon class="text-blue-3 bg-neutral-1" name="earth"></ion-icon>
                     <div>
-                        <h2 id="wallets">$10M+</h2>
-                        <p>Trusted Wallet Investors</p>
+                        <h2 id="countries">195</h2>
+                        <p>Countries Around The World</p>
                     </div>
                 </div>
                 <div class="scroll fade-in-bottom">
-                    
-                    <ion-icon name="earth"></ion-icon>
+                    <ion-icon class="text-blue-3 bg-neutral-1" name="person"></ion-icon>
                     <div>
-                        <h2 id="countries">195</h2>
-                    <p>Countries Supported</p>
+                        <h2 id="wallets">$10M+</h2>
+                        <p>Trusted Wallet Investors</p>
                     </div>
                 </div>
             </div>
@@ -124,10 +128,10 @@
                         </fieldset>
                     </form>
 
-                    <div>
-                        <h3 class="text-blue-3 uppercase fw-light">Estimated 24 hours revenue:</h3>
-                        <h3 class="text-blue-1 fs-2">0.055 130 59 ETH <span class="text-blue-3">($1275)</span> </h3>
-                        <p class="text-blue-1">Revenue will change based on mining difficulty and Ethereum price.</p>
+                    <div class="estimate">
+                        <h3 class="text-blue-3 uppercase fw-light line1">Estimated 24 hours revenue:</h3>
+                        <h3 class="text-blue-1 fs-2 line1">0.055 130 59 ETH <span class="text-blue-3">($1275)</span> </h3>
+                        <p class="text-blue-1 line1">Revenue will change based on mining difficulty and Ethereum price.</p>
                     </div>
                 </div>
             </div>
@@ -243,7 +247,7 @@
         </div>
 
         <div>
-            <h2 class="fs-2">We accept the following payment systems</h2>
+            <h3 class="fs-2 line1">We accept the following payment systems</h3>
             <picture>
                 <img src="images/visa.png" alt="Visa Card Logo">
                 <img src="images/mastercard.png" alt="Mastercard Logo">
