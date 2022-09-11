@@ -18,7 +18,7 @@
     <script src="./scrips/nav.js" defer></script>
 </head>
 <body>
-    <!-- <a class="skip-to-content bg-white text-blue-1" href="#main">Skip to content</a> -->
+    <!-- <a class="skip-to-content bg-white text-primary" href="#main">Skip to content</a> -->
     <header id="hero">
         <nav>
             <div class="logo">
@@ -36,7 +36,7 @@
                 <ul>
                     <li><a href="#">Login</a></li>
                     <span class="divider"></span>
-                    <li class="nav-btn text-white bg-blue-3"><a href="#">Register</a></li>
+                    <li class="nav-btn text-white bg-accent"><a href="#">Register</a></li>
                 </ul>
             </div>
 
@@ -48,8 +48,8 @@
         </nav>
         
         <article class="">
-            <p class="header-discount bg-neutral-1 text-grey">
-                <span class="bg-grey text-blue-1 fw-bold uppercase">75% save</span>
+            <p class="header-discount line1 bg-neutral-1 text-grey">
+                <span class="bg-grey text-primary fw-bold uppercase">75% save</span>
                 <span>For the Black Friday weekend</span>
             </p>
             
@@ -68,29 +68,28 @@
         </div>
     </header>
 
-    <main id="main">
-        <section class="section-1 bg-blue-1" id="about">
+    <main id="main" class="bg-light">
+        <section class="section-1 bg-primary" id="about">
             <div class="stats">
                 <div class="scroll fade-in-bottom">
-                    <ion-icon class="text-blue-3 bg-neutral-1" name="bar-chart"></ion-icon>
+                    <ion-icon class="text-accent bg-neutral-1" name="bar-chart"></ion-icon>
                     <div>
-                        <h2 id="currency"></h2>
+                        <h2>$<span id="currency">30</span>B</h2>
                         <p>Digital Currency Exchange</p>
                     </div>
                 </div>
                 <div class="scroll fade-in-bottom">
-                    
-                    <ion-icon class="text-blue-3 bg-neutral-1" name="earth"></ion-icon>
+                    <ion-icon class="text-accent bg-neutral-1" name="person"></ion-icon>
                     <div>
-                        <h2 id="countries">195</h2>
-                        <p>Countries Around The World</p>
+                        <h2>$<span id="wallets">10</span>+</h2>
+                        <p>Trusted Wallet Investors</p>
                     </div>
                 </div>
                 <div class="scroll fade-in-bottom">
-                    <ion-icon class="text-blue-3 bg-neutral-1" name="person"></ion-icon>
+                    <ion-icon class="text-accent bg-neutral-1" name="earth"></ion-icon>
                     <div>
-                        <h2 id="wallets">$10M+</h2>
-                        <p>Trusted Wallet Investors</p>
+                        <h2 id="countries">195</h2>
+                        <p>Countries Supported</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +111,7 @@
                 </div>
 
                 <div class="bg-white scroll scale">
-                    <form action="" class="text-blue-1">
+                    <form action="" class="text-primary">
                         <fieldset>
                             <input type="text" placeholder="Enter your hash rate">
                             
@@ -129,44 +128,44 @@
                     </form>
 
                     <div class="estimate">
-                        <h3 class="text-blue-3 uppercase fw-light line1">Estimated 24 hours revenue:</h3>
-                        <h3 class="text-blue-1 fs-2 line1">0.055 130 59 ETH <span class="text-blue-3">($1275)</span> </h3>
-                        <p class="text-blue-1 line1">Revenue will change based on mining difficulty and Ethereum price.</p>
+                        <h3 class="text-accent uppercase fw-light line1">Estimated 24 hours revenue:</h3>
+                        <h3 class="text-primary fs-2 line1">0.055 130 59 ETH <span class="text-accent">($1275)</span> </h3>
+                        <p class="text-primary line1">Revenue will change based on mining difficulty and Ethereum price.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section-2" id="products">
-            <h2 class="text-blue-1 scroll fade-in">Trade Securely And Market The High Growth Cryptocurrencies.</h2>
+            <h2 class="text-primary scroll fade-in">Trade Securely And Market The High Growth Cryptocurrencies.</h2>
             <div class="cards">
                 <div class="card bg-white focus scroll scale">
                     <img src="images/bitcon.png" alt="Bitcoin image">
-                    <h2 class="text-blue-1 focus">Bitcoin <span class="text-grey fs-2 fw-light">BTC</span></h2>
-                    <p class="text-blue-1 focus">Digital currency in which a record of transactions is maintained.</p>
-                    <div class="focus card-arrow text-blue-3 fs-3">></div>
+                    <h2 class="text-primary focus">Bitcoin <span class="text-grey fs-2 fw-light">BTC</span></h2>
+                    <p class="text-primary focus">Digital currency in which a record of transactions is maintained.</p>
+                    <div class="focus card-arrow text-accent fs-3">></div>
                     <button class="focus card-btn">Start mining <span>></span></button>
                 </div>
 
                 <div class="card bg-white scroll scale">
                     <img src="images/ethereum.png" alt="Ethereum image">
-                    <h2 class="text-blue-1">Ethereum <span class="text-grey fs-2 fw-light">ETH</span></h2>
-                    <p class="text-blue-1">Blockchain technology to create and run decentralized digital applications.</p>
-                    <div class="card-arrow text-blue-3 fs-3">></div>
+                    <h2 class="text-primary">Ethereum <span class="text-grey fs-2 fw-light">ETH</span></h2>
+                    <p class="text-primary">Blockchain technology to create and run decentralized digital applications.</p>
+                    <div class="card-arrow text-accent fs-3">></div>
                     <button class="card-btn">Start mining <span>></span> </button>
                 </div>
 
                 <div class="card bg-white scroll scale">
                     <img src="images/litecoin.png" alt="Litecoin image">
-                    <h2 class="text-blue-1">Litecoin <span class="text-grey fs-2 fw-light">LTC</span></h2>
-                    <p class="text-blue-1">Cryptocurrency that enables instant payments to anyone in the world.</p>
-                    <div class="card-arrow text-blue-3 fs-3">></div>
+                    <h2 class="text-primary">Litecoin <span class="text-grey fs-2 fw-light">LTC</span></h2>
+                    <p class="text-primary">Cryptocurrency that enables instant payments to anyone in the world.</p>
+                    <div class="card-arrow text-accent fs-3">></div>
                     <button class="card-btn">Start mining <span>></span> </button>
                 </div>
             </div>
         </section>
 
-        <section class="section-3 bg-purple" id="features">
+        <section class="section-3 bg-secondary" id="features">
             <h2 class="scroll fade-in">Market Sentiments, Portfolio, And Run The Infrastructure Of Your Choice</h2>
 
             <article class="ft-1-article scroll slide-left">
@@ -210,14 +209,14 @@
                 <form>
                     <fieldset>
                         <input class="text-white" type="text" placeholder="Enter your email">
-                        <button class="text-blue-1 bg-white">Subscribe</button>
+                        <button class="text-primary bg-white">Subscribe</button>
                     </fieldset>
                 </form>
            </article>
         </section>
     </main>
 
-    <footer class="bg-blue-1">
+    <footer class="bg-primary">
         <picture>
             <img src="images/logo.svg" alt="Crappo Logo Image">
         </picture>
@@ -247,7 +246,7 @@
         </div>
 
         <div>
-            <h3 class="fs-2 line1">We accept the following payment systems</h3>
+            <h3 class="line1">We accept the following payment systems</h3>
             <picture>
                 <img src="images/visa.png" alt="Visa Card Logo">
                 <img src="images/mastercard.png" alt="Mastercard Logo">
@@ -256,7 +255,7 @@
         </div>
 
         <div class="copyright">
-            <p>© 2022 CRAPPO. All rights reserved.</p>
+            <p class="fs-1">© 2022 CRAPPO. All rights reserved.</p>
         </div>
 
         <div class="social-icons">

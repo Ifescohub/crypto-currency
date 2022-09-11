@@ -1,15 +1,35 @@
-
+//STORING DOM ELEMENT
 const currency = document.getElementById("currency");
 const wallets = document.getElementById("wallets")
 const countries = document.getElementById("countries")
 
 const cards = document.querySelectorAll(".card");
 
-const slideUpward = document.querySelectorAll(".slide-up")
-
-
 const scrollElements = document.querySelectorAll(".scroll");
 
+
+
+//FORMATTING COUNTER
+let counts;
+
+function counter (item, type, digit, time){
+  counts = item;
+  item = setInterval(updated, time);
+  let start = 0;
+
+    function updated (){
+      type.innerHTML =  ++start;
+      if (start === digit){
+          clearInterval(item)
+      }
+  }
+
+  
+}
+
+
+
+//FORMATTING ANIMATION ON SCROLL
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
  
@@ -45,121 +65,23 @@ const handleScrollAnimation = () => {
   })
 }
 
+
+
+
+//Calling animation on scroll and counter
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
+
+  counter(counts, currency, 30, 50);
+  counter(counts, wallets, 10, 150);
+  counter(counts, countries, 195, 15);
+
 });
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function slideUp() {
-//     for (let i=0; i<slideUpward.length; i++){
-//         let windowHeight = window.innerHeight;
-//         let elementTop = slideUpward[i].getBoundingClientRect().top;
-//         let elementVisible = 150;
-
-//         if (elementTop > windowHeight-elementVisible){
-//             slideUpward[i].classList.add("slide-up")
-//         }else{
-//             slideUpward[i].classList.remove("slide-up")
-//         }
-//     }
-// }
-
-
-
-// window.addEventListener("scroll", slideUp)
-
-
-
-
-// console.log(slideUpward[0].getBoundingClientRect().top)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let i = 0;
-
-// while(i<=30){
-//     currency.textContent = i;
-//     setInterval(() => {
-//         i++;
-//     }, 1000);
-    
-// }
-
-let counts = setInterval(updated, 50);
-let start = 0;
-
-function updated (){
-    currency.innerHTML = `$${++start}B`;
-    if (start === 30){
-        clearInterval(counts)
-    }
-}
-
-
-
-
-
-
-
-
-
-//Changing focus on cards
+//  FORMATTING CHANGE ON CARD WHEN CLICKED
 cards.forEach((card) => card
     .addEventListener("click", ()=>{
         removeFocus(cards)
