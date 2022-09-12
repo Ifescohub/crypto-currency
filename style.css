@@ -378,17 +378,8 @@ body{
     background-size: 20%;
 }
 
-.section-1 > article h2{
-    margin-block: 1rem;
-}
-
-.section-1 > article h2 span{
-    /* display: block; */
-}
-
 .section-1 > article p{
     margin-block: 1rem;
-    padding-inline-end: ;
 }
 
 /* Exchange */
@@ -630,6 +621,9 @@ footer{
     padding-block: 2rem;
 }
 
+footer *{
+    max-width: 100%;
+}
 
 
 footer > *:nth-child(1){
@@ -655,16 +649,15 @@ footer > *:nth-child(2) ul{
 
 footer > *:nth-child(3){
     grid-column: 4/5;
-    margin-inline-start: 1rem;
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 footer > *:nth-child(3) picture{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     margin-block-start: 1.5rem;
-    max-width: 100%;
 }
 
 footer > *:nth-child(3) picture img{
@@ -704,7 +697,6 @@ footer ion-icon:hover{
 
 
 /**Styling scrollable elements*/
-
 .scroll {
     opacity: 0;
     transition: opacity 0.5s;
@@ -873,7 +865,7 @@ footer ion-icon:hover{
     .menu-bar{
         display: block;
         position: fixed;
-        right: 9%;
+        right: 8%;
         z-index: 3;
     }
     
@@ -1102,7 +1094,10 @@ footer ion-icon:hover{
 
     footer > *:nth-child(3){
         grid-column: 2;
-        margin-inline-start: 0;
+    }
+
+    footer > *:nth-child(3) > picture{
+        justify-content: center;
     }
 
     footer > *:nth-child(4){

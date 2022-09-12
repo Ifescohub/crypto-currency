@@ -1,6 +1,6 @@
 # Crypto Currency Website Coding Challenge
 
-![Design preview for the #coding360challenge crypto currency website coding challenge](./design.png)
+![Design preview for the #coding360challenge crypto currency website coding challenge](./design/Design.png)
 
 # Crypto Currency Website Coding Challenge solution
 
@@ -33,8 +33,8 @@ Candidates should be able to:
 
 ### Screenshot
 
-![](./assets/screenshots/screenshot1.png)
-![](./assets/screenshots/screenshot2.png)
+![](./screenshots/screenshot1.png)
+![](./screenshots/screenshot2.png)
 
 ### Links
 
