@@ -1,10 +1,10 @@
-# Crypto Currency Website Challenge
+# Crypto Currency Website Coding Challenge
 
-![Design preview for the Space tourism website coding challenge](./preview.jpg)
+![Design preview for the #coding360challenge crypto currency website coding challenge](./design.png)
 
-# Crypto Currency Website Challenge solution
+# Crypto Currency Website Coding Challenge solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [#coding360challenge crypto currency website coding challenge by @codingossy](https://twitter.com/codingossy). This is the September edition of the coding challenge. 
 
 ## Table of contents
 
@@ -21,82 +21,68 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Overview
 
-### The challenge
+### The rules
 
-Users should be able to:
+Candidates should be able to:
 
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each page and be able to toggle between the tabs to see new information
+- Have fun, no pressure
+- Make the website responsive
+- Have clean codes
+- Use modern semantic HTML
+-Use structured and reuseable codes if library is used
 
 ### Screenshot
 
 ![](./assets/screenshots/screenshot1.png)
 ![](./assets/screenshots/screenshot2.png)
-![](./assets/screenshots/screenshot3.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Ifescohub/crypto-currency](https://github.com/Ifescohub/crypto-currency)
+- Live Site URL: [https://zesty-mooncake-9d3f86.netlify.app/](https://zesty-mooncake-9d3f86.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- HTML Assessibility tags
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Desktop-first workflow
-- [Google Fonts](https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap) - For Fonts
+- [Google Fonts](https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap) - For Fonts
 
 ### What I learned
 
-I learnt a lot through this project.
-this is my first time using some accessibity and aria features such as aria-control, aria-label, aria-hidden etc. I also learnt how to use the 'data-' feature.
-
-I learn new styling poperties like cramp, minmax, etc. For example, clamp can be used to set a font size to change throught the device sizes.
-```css
-h1{
-  font-size: clamp(90px, 10vw, 150px);
-}
-```
-
-I also learnt how to use @support to implement stying that might not work on all devices, like 'backdrop'. see example below;
-
-```css
-@supports (backdrop-filter: blur(1.5rem)){
-    .navigation{
-        background: hsla(0, 0%, 100%, 0.034);
-        backdrop-filter: blur(1.5rem)
-    }
-}
-```
-
-I also learnt how to call a clicked event and also trace it back to its parent up to the body 
+I learnt a lot through this project. I had fun while learning new JavaScript concepts.
+I was able to use the "getBoundingClientRect().top", "window.innerHeight" and "clientHeight" for the first to add animatimation on scroll
 ```js
-function changeContent(e){
-    const targetTab = e.target;     //clicked tab
-    const targetArticle = targetTab.getAttribute("aria-controls");  //Clicked tab's article
-    const targetImages = targetTab.getAttribute("data-image");  //Clicked tab's image
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+ 
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  ); 
+};
 
-    const tabContainer = targetTab.parentNode;
-    const sectionContainer = tabContainer.parentNode;
-    const mainContainer = sectionContainer.parentNode;
-}
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
 ```
 
 ### Continued development
 
-Still trying to wrap my head around using some of the Javascript selector like this - [`#${targetArticle}`]). I still have a lot to improve on in javascript.
+Still trying to learn how to control the element on scroll even better. I still have a lot to improve on in javascript.
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [resource](https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671) - This help me a lot while trying to wrap my head around how to use vanilla javascript to create the animation on scroll. It helped to simplify the process
 
 
 ## Author
@@ -107,4 +93,4 @@ Still trying to wrap my head around using some of the Javascript selector like t
 
 ## Acknowledgments
 
-A big thanks to Kevin Powell on Scrimba.com. His lecture really helped me alot before I started this challenge.
+A big thanks to Gift @codingossy](https://twitter.com/codingossy) for creating this challenge. It gave a beginner like me the chance to compete with the professionals in this field while giving me basis to improve more.

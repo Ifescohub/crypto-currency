@@ -11,7 +11,7 @@
     --clr-accent: #3671E9;
     --clr-white: #FFFFFF;
     --clr-grey: #E0E0E0;
-    --clr-light-bg: #F8F9FB;
+    --clr-light: #F8F9FB;
     --clr-neutral-1:#23233f;
 
     --ff: 'Rubik', sans-serif;
@@ -26,21 +26,12 @@
     --fw-light: 400;
 }
 
-@media (max-width: 65rem) {
+@media (min-width: 52rem) and (max-width: 65rem) {
     :root{
         --fs-1: 0.8rem;
         --fs-2: 1.2rem;
         --fs-3: 1.5rem;
         --fs-4: 2rem;
-    }
-}
-
-@media (max-width: 52rem) {
-    :root{
-        --fs-1: 1rem;
-        --fs-2: 1.5rem;
-        --fs-3: 2rem;
-        --fs-4: 2.5rem;
     }
 }
 
@@ -67,6 +58,14 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
+    }
+
+    .scroll{
+        opacity: 1;
+    }
+
+    .active{
+        animation: none !important;
     }
   }
 
@@ -162,20 +161,6 @@ body{
 /* Utility classes     */
 /* ------------------- */
 
-/* Skip to content  */
-.skip-to-content {
-    position: absolute;
-    z-index: 9999; 
-    padding: .5em 1em;
-    margin-inline: auto;
-    transform: translateY(-100%);
-    transition: transform 250ms ease-in;
-}
-
-.skip-to-content:focus {
-    transform: translateY(0);
-}
-
 /* colors */
 .text-primary{color: var(--clr-primary);}
 .text-secondary{color: var(--clr-secondary);}
@@ -185,12 +170,12 @@ body{
 .text-neutral-1{color: var(--clr-neutral-1)}
 
 /* backgrounds */
+.bg-primary{background-color: var(--clr-primary);}
+.bg-secondary{background-color: var(--clr-secondary);}
+.bg-accent{background-color: var(--clr-accent);}
 .bg-white{background-color: var(--clr-white);}
 .bg-grey{background-color: var(--clr-grey)}
-.bg-primary{background-color: var(--clr-primary);}
-.bg-light{background-color: var(--clr-light-bg);}
-.bg-accent{background-color: var(--clr-accent);}
-.bg-secondary{background-color: var(--clr-secondary);}
+.bg-light{background-color: var(--clr-light);}
 .bg-neutral-1{background-color: var(--clr-neutral-1);}
 
 /* font */
@@ -207,12 +192,11 @@ body{
 
 .line1{line-height: 1.2;}
 
-.flex{
-    display: flex;
 
 
-}
-
+/* ------------------- */
+/*         LAYOUT     */
+/* ------------------- */
 /* ------------HEADER----------  */
 #hero{
     background-image: url(./images/hero-bg.png);
@@ -307,7 +291,7 @@ body{
 }
 
 #hero article button{
-    animation: scale 1s ease-in-out;
+    animation: slide-in-right 1s ease-in-out;
 }
 
 
@@ -385,6 +369,9 @@ body{
 .section-1 > article{
     grid-column: 3;
     align-self: center;
+    width: 80%;
+    max-width: 100%;
+    justify-self: center;
     background-image: url(./images/why-model-1.png), url(./images/why-model-2.png);
     background-repeat: no-repeat;
     background-position: top right, bottom right;
@@ -396,12 +383,12 @@ body{
 }
 
 .section-1 > article h2 span{
-    display: block;
+    /* display: block; */
 }
 
 .section-1 > article p{
     margin-block: 1rem;
-    padding-inline-end: 8rem;
+    padding-inline-end: ;
 }
 
 /* Exchange */
@@ -500,6 +487,7 @@ body{
 
 .focus{
     transition: all 1s ease-in-out;
+    animation: rotate 1s ease-in-out;
 }
 
 .section-2 .cards > *.focus{
@@ -642,6 +630,8 @@ footer{
     padding-block: 2rem;
 }
 
+
+
 footer > *:nth-child(1){
     grid-column: 2/3;
 }
@@ -656,19 +646,11 @@ footer > *:nth-child(2) h3{
     margin-block-end: 2rem;
 }
 
+
 footer > *:nth-child(2) ul{
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-}
-
-footer > *:nth-child(2) a{
-    transition: all 0.6s ease-in-out;
-}
-
-footer > *:nth-child(2) a:hover{
-    color: var(--clr-accent);
-    transition: all 0.6s ease-in-out;
 }
 
 footer > *:nth-child(3){
@@ -683,7 +665,6 @@ footer > *:nth-child(3) picture{
     gap: 1rem;
     margin-block-start: 1.5rem;
     max-width: 100%;
-
 }
 
 footer > *:nth-child(3) picture img{
@@ -697,28 +678,36 @@ footer > *:nth-child(4){
 footer > *:nth-child(5){
     grid-column: 4/5;
     justify-self: flex-end;
-
 }
 
 footer > *:nth-child(5) ion-icon{
     color: var(--clr-white);
     font-size: 1.5rem;
     margin-inline-start: 1rem;
-    transition: all 0.5s ease-in-out;
 }
 
-footer > *:nth-child(5) ion-icon:hover{
+footer > *:nth-child(6){
+    grid-column: 3/4;
+    justify-self: center;
+}
+
+footer a,
+footer ion-icon{
+    transition: all 0.6s ease-in-out;
+}
+
+footer a:hover,
+footer ion-icon:hover{
     color: var(--clr-accent);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
-
 
 
 /**Styling scrollable elements*/
 
 .scroll {
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 0.5s;
   }
   
   .scroll.active {
@@ -761,8 +750,8 @@ footer > *:nth-child(5) ion-icon:hover{
   
   @keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
       opacity: 0;
     }
     100% {
@@ -774,8 +763,8 @@ footer > *:nth-child(5) ion-icon:hover{
   
   @keyframes fade-in-bottom {
     0% {
-      -webkit-transform: translateY(100px);
-      transform: translateY(100px);
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
       opacity: 0;
     }
     100% {
@@ -794,6 +783,18 @@ footer > *:nth-child(5) ion-icon:hover{
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+      transform: rotateY(360deg);
       opacity: 1;
     }
   }
@@ -953,10 +954,6 @@ footer > *:nth-child(5) ion-icon:hover{
         grid-column: 2;
     }
 
-    .section-1 > article p{
-        padding-inline-end: 0;
-    }
-
     /* Exchange */
     .section-1 > .exchange{
         grid-column: 2;
@@ -1097,13 +1094,11 @@ footer > *:nth-child(5) ion-icon:hover{
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
- 
     }
 
     footer > *:nth-child(2) h3{
         margin-block-end: 1.5rem;
     }
-
 
     footer > *:nth-child(3){
         grid-column: 2;
@@ -1120,10 +1115,8 @@ footer > *:nth-child(5) ion-icon:hover{
 
     }
 
-    footer > *:nth-child(5) ion-icon{
-        font-size: 1.5rem;
-        margin-inline-start: 1rem;
-        transition: all 0.5s ease-in-out;
+    footer > *:nth-child(6){
+        grid-column: 2;
     }
     
 }

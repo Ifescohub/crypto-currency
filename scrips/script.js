@@ -23,8 +23,12 @@ function counter (item, type, digit, time){
           clearInterval(item)
       }
   }
+}
 
-  
+function callCounter(){
+  counter(counts, currency, 30, 60);
+  counter(counts, wallets, 10, 200);
+  counter(counts, countries, 195, 15);
 }
 
 
@@ -69,15 +73,11 @@ const handleScrollAnimation = () => {
 
 
 //Calling animation on scroll and counter
-window.addEventListener("scroll", () => { 
-  handleScrollAnimation();
+window.addEventListener("scroll", handleScrollAnimation);
 
-  counter(counts, currency, 30, 50);
-  counter(counts, wallets, 10, 150);
-  counter(counts, countries, 195, 15);
-
+window.addEventListener("scroll", callCounter, { 
+  once: true
 });
-
 
 
 
