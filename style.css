@@ -13,6 +13,7 @@
     --clr-grey: #E0E0E0;
     --clr-light: #F8F9FB;
     --clr-neutral-1:#23233f;
+    --clr-neutral-2: #8080809d;
 
     --ff: 'Rubik', sans-serif;
 
@@ -233,18 +234,21 @@ body{
     align-self: center;
     width: 2px;
     height: 20px;
-    background-color: #8080809d;
+    background-color: var(--clr-neutral-2);
 }
 
 #hero nav .nav-btn{
     position: relative;
     padding: 4px 20px;
     border-radius: 1.5rem;
+    transition: all 0.5s ease-in-out;
 }
 
 #hero nav .nav-btn:hover{
     background-color: var(--clr-white);
     color: var(--clr-accent);
+    transform: translateY(-0.5rem);
+    transition: all 0.5s ease-in-out;
 }
 
 /* Menu bar */
@@ -440,6 +444,7 @@ body{
     grid-column: 2/4;
     justify-self: center;
     width: 80%;
+    max-width: 100%;
 }
 
 .section-2 .cards{
@@ -666,6 +671,7 @@ footer > *:nth-child(3) picture img{
 
 footer > *:nth-child(4){
     grid-column: 2/3;
+    width: 95%;
 }
 
 footer > *:nth-child(5){
@@ -682,6 +688,8 @@ footer > *:nth-child(5) ion-icon{
 footer > *:nth-child(6){
     grid-column: 3/4;
     justify-self: center;
+    width: 95%;
+    text-align: center;
 }
 
 footer a,

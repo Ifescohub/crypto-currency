@@ -1,7 +1,3 @@
-# Crypto Currency Website Coding Challenge
-
-![Design preview for the #coding360challenge crypto currency website coding challenge](./design/Design.png)
-
 # Crypto Currency Website Coding Challenge solution
 
 This is a solution to the [#coding360challenge crypto currency website coding challenge by @codingossy](https://twitter.com/codingossy). This is the September edition of the coding challenge. 
@@ -16,6 +12,7 @@ This is a solution to the [#coding360challenge crypto currency website coding ch
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resource](#useful-resource)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -34,12 +31,11 @@ Candidates should be able to:
 ### Screenshot
 
 ![](./screenshots/screenshot1.png)
-![](./screenshots/screenshot2.png)
 
 ### Links
 
-- Solution URL: [https://github.com/Ifescohub/crypto-currency](https://github.com/Ifescohub/crypto-currency)
-- Live Site URL: [https://zesty-mooncake-9d3f86.netlify.app/](https://zesty-mooncake-9d3f86.netlify.app/)
+- Solution URL: [github.com/Ifescohub/crypto-currency](https://github.com/Ifescohub/crypto-currency)
+- Live Site URL: [zesty-mooncake-9d3f86.netlify.app/](https://zesty-mooncake-9d3f86.netlify.app/)
 
 ## My process
 
@@ -80,9 +76,9 @@ const elementOutofView = (el) => {
 Still trying to learn how to control the element on scroll even better. I still have a lot to improve on in javascript.
 
 
-### Useful resources
+### Useful resource
 
-- [resource](https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671) - This help me a lot while trying to wrap my head around how to use vanilla javascript to create the animation on scroll. It helped to simplify the process
+- [webdesign.tutsplus.com/tutori...](https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671) - This help me a lot while trying to wrap my head around how to use vanilla javascript to create the animation on scroll. It helped to simplify the process
 
 
 ## Author

@@ -71,13 +71,13 @@ const handleScrollAnimation = () => {
 
 
 
-
 //Calling animation on scroll and counter
 window.addEventListener("scroll", handleScrollAnimation);
 
 window.addEventListener("scroll", callCounter, { 
   once: true
 });
+
 
 
 
